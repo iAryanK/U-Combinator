@@ -5,3 +5,5 @@
 2. create: auth
     - created using auth.js
     - form actions with server actions https://react.dev/reference/rsc/server-actions#form-actions-with-server-actions
+
+![screenshot](https://github.com/iAryanK/U-Combinator/blob/main/public/references/auth-flow.png?raw=true)
