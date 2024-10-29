@@ -27,16 +27,16 @@ const ThemeToggle = () => {
     };
 
     return (
-        <Toggle className="rounded-full p-1">
+        <Toggle className="">
             {!isLight ? (
                 <Sun
                     onClick={enableLightMode}
-                    className="transition ease-in-out hover:rotate-45"
+                    className="transition ease-in-out hover:scale-105"
                 />
             ) : (
                 <Moon
                     onClick={enableDarkMode}
-                    className="transition ease-in-out hover:rotate-45"
+                    className="transition ease-in-out hover:scale-105"
                 />
             )}
         </Toggle>
