@@ -81,4 +81,37 @@ body {
     .sub-heading {
         @apply font-semibold text-2xl text-white max-w-2xl text-center break-words;
     }
+
+    .section_container {
+        @apply px-6 py-10 max-w-7xl mx-auto;
+    }
+
+    .card_grid {
+        @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+    }
+
+    .card_grid-sm {
+        @apply grid sm:grid-cols-2 gap-5;
+    }
+
+    /* projectcard */
+    .project-card {
+        @apply py-6 px-5 rounded-3xl border-[5px] border-e-[10px] border-b-[10px] border-black dark:border-white shadow-sm transition-all duration-500 hover:shadow-md hover:bg-orange-100 hover:dark:bg-zinc-900;
+    }
+
+    .project-card_date {
+        @apply font-medium text-lg px-4 py-2;
+    }
+
+    .project-card_desc {
+        @apply font-normal text-base line-clamp-2 my-3 break-all;
+    }
+
+    .project-card_img {
+        @apply w-full h-40 rounded-lg object-cover;
+    }
+
+    .project-card_btn {
+        @apply rounded-full font-medium text-sm text-white px-5 py-3 transition-all duration-500;
+    }
 }

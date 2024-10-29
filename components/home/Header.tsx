@@ -4,7 +4,7 @@ import SearchForm from "@/components/home/SearchForm";
 const Header = ({children}: { children: React.ReactNode }) => {
 
     return (
-        <div className="h-[80vh] w-full relative flex items-center pt-28 flex-col gap-2">
+        <div className="h-[70vh] w-full relative flex items-center pt-28 flex-col gap-2">
             <div
                 className="absolute top-0 z-[-2] h-full w-full bg-transparent dark:bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"/>
 

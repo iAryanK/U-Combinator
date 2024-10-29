@@ -9,5 +9,5 @@
 ![screenshot](https://github.com/iAryanK/U-Combinator/blob/main/public/references/auth-flow.png?raw=true)
 
 3. create: SearchForm
-    - created SearchForm in header using next/form
+    - created SearchForm in Header using next/form
     - Form from next/form https://nextjs.org/docs/pages/api-reference/components/form

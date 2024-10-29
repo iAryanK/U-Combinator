@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useMemo, type JSX } from 'react';
-import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
+import React, {useMemo, type JSX} from 'react';
+import {motion} from 'framer-motion';
+import {cn} from '@/lib/utils';
 
 interface TextShimmerProps {
     children: string;
@@ -16,8 +16,8 @@ export function TextShimmer({
                                 children,
                                 as: Component = 'div',
                                 className,
-                                duration = 2,
-                                spread = 2,
+                                duration = 3,
+                                spread = 10,
                             }: TextShimmerProps) {
     const MotionComponent = motion(Component as keyof JSX.IntrinsicElements);
 
@@ -34,8 +34,8 @@ export function TextShimmer({
                 'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff] dark:[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]',
                 className
             )}
-            initial={{ backgroundPosition: '100% center' }}
-            animate={{ backgroundPosition: '0% center' }}
+            initial={{backgroundPosition: '100% center'}}
+            animate={{backgroundPosition: '0% center'}}
             transition={{
                 repeat: Infinity,
                 duration,
