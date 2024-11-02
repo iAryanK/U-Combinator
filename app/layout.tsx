@@ -1,8 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
-import {ThemeProvider} from "@/components/providers/theme-provider";
-import {Work_Sans} from "next/font/google";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { Work_Sans } from "next/font/google";
+import "easymde/dist/easymde.min.css";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -12,7 +13,8 @@ const workSans = Work_Sans({
 
 export const metadata: Metadata = {
   title: "U-Combinator",
-  description: "Share your project ideas, create the best collaborative team and convert your dream idea into reality.",
+  description:
+    "Share your project ideas, create the best collaborative team and convert your dream idea into reality.",
 };
 
 export default function RootLayout({
@@ -22,17 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${workSans.variable} antialiased`}
-      >
-      <ThemeProvider
+      <body className={`${workSans.variable} antialiased`}>
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

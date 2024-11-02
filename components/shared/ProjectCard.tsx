@@ -19,7 +19,7 @@ const ProjectCard = ({post}) => {
     } = post;
 
     return (
-        <li className="project-card group font-work-sans">
+        <li className="form group font-work-sans">
             <div className="flex items-center justify-between">
                 <p className="project_card_date">{formatDate(_createdAt)}</p>
                 <div className="flex gap-1.5">

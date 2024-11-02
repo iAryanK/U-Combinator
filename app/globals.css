@@ -33,6 +33,7 @@ body {
         --chart-4: 43 74% 66%;
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
+        --custom-card: black;
     }
 
     .dark {
@@ -60,6 +61,7 @@ body {
         --chart-3: 30 80% 55%;
         --chart-4: 280 65% 60%;
         --chart-5: 340 75% 55%;
+        --custom-card: white;
     }
 }
 
@@ -71,6 +73,15 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+
+    .form {
+        --main-color: var(--custom-card);
+        padding: 20px;
+        border-radius: 5px;
+        border: 2px solid var(--main-color);
+        box-shadow: 4px 4px var(--main-color);
+    }
+    
 }
 
 @layer utilities {
@@ -95,10 +106,6 @@ body {
     }
 
     /* projectcard */
-    .project-card {
-        @apply py-6 px-5 rounded-3xl border-[5px] border-e-[10px] border-b-[10px] border-black dark:border-white shadow-sm transition-all duration-500 hover:shadow-md hover:bg-orange-100 hover:dark:bg-zinc-900;
-    }
-
     .project-card_date {
         @apply font-medium text-lg px-4 py-2;
     }
