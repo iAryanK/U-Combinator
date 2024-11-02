@@ -2,7 +2,7 @@ import Header from "@/components/home/Header";
 import SearchForm from "@/components/home/SearchForm";
 import ProjectCard, { ProjectTypeCard } from "@/components/shared/ProjectCard";
 import { PROJECTS_QUERY } from "@/sanity/lib/queries";
-import { client } from "@/sanity/lib/client";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 
 export default async function Home({
   searchParams,
@@ -11,7 +11,7 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
 
-  const posts = await client.fetch(PROJECTS_QUERY);
+  const { data: posts } = await sanityFetch({ query: PROJECTS_QUERY });
 
   return (
     <>
@@ -41,6 +41,7 @@ export default async function Home({
           )}
         </ul>
       </section>
+      <SanityLive />
     </>
   );
 }
