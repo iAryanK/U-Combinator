@@ -21,3 +21,16 @@
    ![screenshot](https://github.com/iAryanK/U-Combinator/blob/main/public/references/sanity-schema.png?raw=true)
 
 ![screenshot](https://github.com/iAryanK/U-Combinator/blob/main/public/references/app-flow.png?raw=true)
+
+5. generate: schema types
+   - extract schema from the following command
+   ```
+   npx sanity@latest schema extract --path=./sanity/extract.json
+   ```
+   - create sanity-typegen.json in root
+   - run the following command to auto generate the schema types
+   ```
+   npx shadcn@latest typegen generate
+   ```
+   - update scripts in package.json (so that we don't have to run the above command everytime we create new schema or query).
+   - Now, the schema types can be used anywhere in the application.
