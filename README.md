@@ -53,5 +53,11 @@
      - Now, use sanityFetch instead of client.fetch to fetch the data.
 
 7. create: project details page
+
    - dynamic route for every project
    - implement PPR https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering
+
+8. implement: views count update
+
+   - sanity writeClient allows to write data on sanity, right from the application
+   - views now update everytime a user visits a project details page
