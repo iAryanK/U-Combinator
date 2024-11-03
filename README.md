@@ -61,3 +61,6 @@
 
    - sanity writeClient allows to write data on sanity, right from the application
    - views now update everytime a user visits a project details page
+
+9. create: author auth flow
+   - user/author is added to sanity database once they signup
