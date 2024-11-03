@@ -51,3 +51,7 @@
      - Create live.ts in root
      - Update sanity_api_version in .env
      - Now, use sanityFetch instead of client.fetch to fetch the data.
+
+7. create: project details page
+   - dynamic route for every project
+   - implement PPR https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering

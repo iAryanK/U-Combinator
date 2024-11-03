@@ -15,7 +15,10 @@ export default async function Home({
 
   return (
     <>
-      <Header>
+      <Header
+        heading="U-Combinator"
+        subHeading="Team up, for your next project 🚀"
+      >
         <SearchForm query={query} />
       </Header>
 
