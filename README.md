@@ -1,3 +1,76 @@
+<div align="center">
+  <br />
+    <a href="https://u-combinator.vercel.app/" target="_blank">
+      <img src="https://github.com/iAryanK/U-Combinator/blob/main/public/references/screenshot.png?raw=true" alt="Project Banner">
+    </a>
+  <br />
+
+  <h3 align="center">Visit the website <a href="https://u-combinator.vercel.app/" target="_blank"><b>U-Combinator</b></a></h3>
+</div>
+
+## <a name="introduction">🤖 Introduction</a>
+
+U-Combinator is a place where one can find various projects to contribute. One can form a team of developers to complete their dream projects.
+
+To enlist a project, user has to login via github OAuth. The user can then then create a new project pitch with description and technology to be used, etc.
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Next.JS 14
+- Typescript
+- Sanity.io CMS
+- Auth.js for authentication
+- Tailwind CSS , shadcn UI
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/iAryanK/U-Combinator.git
+cd U-Combinator
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env.local` in the root of your project and add the following content:
+
+```env
+AUTH_SECRET=
+AUTH_GITHUB_ID=
+AUTH_GITHUB_SECRET=
+NEXT_PUBLIC_SANITY_PROJECT_ID=
+NEXT_PUBLIC_SANITY_DATASET=
+NEXT_PUBLIC_SANITY_API_VERSION=
+SANITY_WRITE_TOKEN=
+```
+
+**Running the Project**
+
+```bash
+npm run dev
+```
+
+Open http://localhost:3000 in your browser to view the project.
+
 ## Development Process
 
 1. Initial setup: Shadcn setup with theme toggle.
