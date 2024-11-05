@@ -74,3 +74,4 @@
 11. create: user profile
 
 - used PPR, where user data is statically fetched and the user projects are fetched within suspense
+- implemented parallel fetching

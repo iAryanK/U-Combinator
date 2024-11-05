@@ -169,7 +169,7 @@ body {
   }
 
   .profile_card {
-    @apply w-80 px-6 pb-6 pt-20 flex flex-col justify-center items-center bg-pink-600 shadow-lg rounded-[30px] relative z-0 h-fit max-lg:w-full;
+    @apply w-80 px-6 pb-6 pt-20 flex flex-col justify-center items-center dark:bg-fuchsia-600 bg-fuchsia-500 shadow-lg rounded-[30px] relative z-0 h-fit max-lg:w-full;
   }
 
   .profile_title {

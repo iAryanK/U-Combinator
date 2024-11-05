@@ -74,7 +74,7 @@ const ProjectCard = ({ post }: { post: ProjectTypeCard }) => {
           <p className="text-sm font-medium">{category}</p>
         </Link>
         <Button
-          className="project-card_btn bg-orange-500 hover:bg-orange-400 dark:bg-orange-600 hover:dark:bg-orange-500"
+          className="project-card_btn bg-fuchsia-500 hover:bg-fuchsia-400 dark:bg-fuchsia-600 hover:dark:bg-fuchsia-500"
           size="sm"
           asChild
         >

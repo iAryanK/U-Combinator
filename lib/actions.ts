@@ -43,8 +43,6 @@ export const createPitch = async (
 
     const result = await writeClient.create({ _type: "project", ...project });
 
-    console.log("[RESULT]", result);
-
     return parseServerActionResponse({
       ...result,
       error: "",
