@@ -176,4 +176,8 @@ body {
   .profile_image {
     @apply rounded-full object-cover border border-black;
   }
+
+  .no-result {
+    @apply text-sm font-normal;
+  }
 }
