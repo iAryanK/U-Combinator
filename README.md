@@ -70,3 +70,7 @@
 
 - useActionState hook for form action
 - backend using server actions to create new project
+
+11. create: user profile
+
+- used PPR, where user data is statically fetched and the user projects are fetched within suspense

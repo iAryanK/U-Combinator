@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signOut, signIn } from "@/auth";
-import { BadgePlus, LogOut } from "lucide-react";
+import { CirclePlus, LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -31,7 +31,7 @@ const Navbar = async () => {
               <Button className="text-md" asChild>
                 <Link href="/project/create">
                   <span className="max-sm:hidden">Create</span>
-                  <BadgePlus className="size-6 sm:hidden" />
+                  <CirclePlus className="size-6 sm:hidden" />
                 </Link>
               </Button>
 
