@@ -120,4 +120,46 @@ body {
   .project-card_btn {
     @apply rounded-full font-medium text-sm text-white px-5 py-3 transition-all duration-500;
   }
+
+  /* searchform */
+  .search-form {
+    @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-black rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
+  }
+
+  .search-input {
+    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none;
+  }
+
+  .search-btn {
+    @apply size-[50px] rounded-full bg-black flex justify-center items-center !important;
+  }
+
+  /* projectform */
+  .project-form {
+    @apply max-w-2xl mx-auto my-10 space-y-8 px-6;
+  }
+
+  .project-form_label {
+    @apply font-bold text-[18px] uppercase;
+  }
+
+  .project-form_input {
+    @apply border-[3px] px-5 py-7 text-[18px] font-semibold rounded-full mt-3 placeholder:font-normal !important;
+  }
+
+  .project-form_textarea {
+    @apply border-[3px] p-5 text-[18px] font-semibold rounded-[20px] mt-3 placeholder:font-normal !important;
+  }
+
+  .project-form_error {
+    @apply text-red-500 mt-2 ml-5;
+  }
+
+  .project-form_editor {
+    @apply mt-5 border-[3px] text-lg font-semibold;
+  }
+
+  .project-form_btn {
+    @apply bg-secondary rounded-full p-5 min-h-[70px] w-full font-bold text-lg;
+  }
 }

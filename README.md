@@ -63,4 +63,10 @@
    - views now update everytime a user visits a project details page
 
 9. create: author auth flow
+
    - user/author is added to sanity database once they signup
+
+10. create: create project page
+
+- useActionState hook for form action
+- backend using server actions to create new project
